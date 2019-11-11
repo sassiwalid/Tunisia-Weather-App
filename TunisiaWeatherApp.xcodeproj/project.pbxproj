@@ -3,14 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61C02DCA6C30C500A7479534 /* Pods_TunisiaWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E0EDC7CC224DA854F09830 /* Pods_TunisiaWeatherApp.framework */; };
+		7E448004D79E60D9543DBE97 /* Pods_TunisiaWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526F0577C23291AAEF81612 /* Pods_TunisiaWeatherAppTests.framework */; };
+		A912A9152376FC700034E621 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A9142376FC700034E621 /* HomeViewModel.swift */; };
+		A912A91B237701030034E621 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A91A237701030034E621 /* City.swift */; };
+		A912A91D237701170034E621 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A91C237701170034E621 /* Weather.swift */; };
+		A912A91F237701400034E621 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A91E237701400034E621 /* CityRepository.swift */; };
+		A912A921237704F60034E621 /* WebWeatherAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A920237704F60034E621 /* WebWeatherAPIRepository.swift */; };
+		A912A92323770E280034E621 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A92223770E280034E621 /* Constants.swift */; };
+		A912A926237719080034E621 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A925237719080034E621 /* Extensions.swift */; };
+		A912A928237875140034E621 /* OpenWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A927237875140034E621 /* OpenWeatherModel.swift */; };
+		A912A92A237884980034E621 /* LocalWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A929237884980034E621 /* LocalWeatherRepository.swift */; };
+		A940EE1B2376BA5E00C4919F /* HomeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = A940EE1A2376BA5E00C4919F /* HomeVc.xib */; };
 		A9A37E5D2375D73A00D75A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37E5C2375D73A00D75A6F /* AppDelegate.swift */; };
 		A9A37E5F2375D73A00D75A6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37E5E2375D73A00D75A6F /* SceneDelegate.swift */; };
-		A9A37E612375D73A00D75A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37E602375D73A00D75A6F /* ViewController.swift */; };
-		A9A37E642375D73A00D75A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A37E622375D73A00D75A6F /* Main.storyboard */; };
+		A9A37E612375D73A00D75A6F /* HomeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37E602375D73A00D75A6F /* HomeVc.swift */; };
 		A9A37E662375D73D00D75A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A37E652375D73D00D75A6F /* Assets.xcassets */; };
 		A9A37E692375D73D00D75A6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A37E672375D73D00D75A6F /* LaunchScreen.storyboard */; };
 		A9A37E742375D73D00D75A6F /* TunisiaWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37E732375D73D00D75A6F /* TunisiaWeatherAppTests.swift */; };
@@ -27,17 +38,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CCB165C60FA8FB4FE06F8C9 /* Pods-TunisiaWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		53E0EDC7CC224DA854F09830 /* Pods_TunisiaWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunisiaWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0737B7914C70CA337B5A44 /* Pods-TunisiaWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6526F0577C23291AAEF81612 /* Pods_TunisiaWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunisiaWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD4E723D7A908DBECBB8E1E /* Pods-TunisiaWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherAppTests/Pods-TunisiaWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A912A9142376FC700034E621 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A912A91A237701030034E621 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		A912A91C237701170034E621 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		A912A91E237701400034E621 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		A912A920237704F60034E621 /* WebWeatherAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebWeatherAPIRepository.swift; sourceTree = "<group>"; };
+		A912A92223770E280034E621 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A912A925237719080034E621 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A912A927237875140034E621 /* OpenWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherModel.swift; sourceTree = "<group>"; };
+		A912A929237884980034E621 /* LocalWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWeatherRepository.swift; sourceTree = "<group>"; };
+		A940EE1A2376BA5E00C4919F /* HomeVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVc.xib; sourceTree = "<group>"; };
 		A9A37E592375D73A00D75A6F /* TunisiaWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TunisiaWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A37E5C2375D73A00D75A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A37E5E2375D73A00D75A6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9A37E602375D73A00D75A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9A37E632375D73A00D75A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9A37E602375D73A00D75A6F /* HomeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVc.swift; sourceTree = "<group>"; };
 		A9A37E652375D73D00D75A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A37E682375D73D00D75A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9A37E6A2375D73D00D75A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A37E6F2375D73D00D75A6F /* TunisiaWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunisiaWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A37E732375D73D00D75A6F /* TunisiaWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunisiaWeatherAppTests.swift; sourceTree = "<group>"; };
 		A9A37E752375D73D00D75A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA71F7914CEF95A6EE68763E /* Pods-TunisiaWeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherAppTests/Pods-TunisiaWeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C02DCA6C30C500A7479534 /* Pods_TunisiaWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +79,139 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E448004D79E60D9543DBE97 /* Pods_TunisiaWeatherAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C329271DB2F75FA28BA5C2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E0EDC7CC224DA854F09830 /* Pods_TunisiaWeatherApp.framework */,
+				6526F0577C23291AAEF81612 /* Pods_TunisiaWeatherAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		919CA9906B9F8B3DE8E968AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B0737B7914C70CA337B5A44 /* Pods-TunisiaWeatherApp.debug.xcconfig */,
+				1CCB165C60FA8FB4FE06F8C9 /* Pods-TunisiaWeatherApp.release.xcconfig */,
+				FA71F7914CEF95A6EE68763E /* Pods-TunisiaWeatherAppTests.debug.xcconfig */,
+				7FD4E723D7A908DBECBB8E1E /* Pods-TunisiaWeatherAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A912A9162376FC820034E621 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A940EE182376B7B900C4919F /* Models */,
+				A912A919237700E20034E621 /* Protocols */,
+				A912A918237700D60034E621 /* Local data */,
+				A912A9172376FCBA0034E621 /* API Service */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A912A9172376FCBA0034E621 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				A912A920237704F60034E621 /* WebWeatherAPIRepository.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		A912A918237700D60034E621 /* Local data */ = {
+			isa = PBXGroup;
+			children = (
+				A912A929237884980034E621 /* LocalWeatherRepository.swift */,
+			);
+			path = "Local data";
+			sourceTree = "<group>";
+		};
+		A912A919237700E20034E621 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A912A91E237701400034E621 /* CityRepository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A912A924237718F10034E621 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A912A925237719080034E621 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A940EE132376B76300C4919F /* HOME */ = {
+			isa = PBXGroup;
+			children = (
+				A940EE192376B7C100C4919F /* Views Models */,
+				A940EE162376B7A500C4919F /* Views */,
+			);
+			path = HOME;
+			sourceTree = "<group>";
+		};
+		A940EE142376B77400C4919F /* SETTINGS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SETTINGS;
+			sourceTree = "<group>";
+		};
+		A940EE152376B78600C4919F /* Commons Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9A37E652375D73D00D75A6F /* Assets.xcassets */,
+				A9A37E6A2375D73D00D75A6F /* Info.plist */,
+				A9A37E5E2375D73A00D75A6F /* SceneDelegate.swift */,
+				A9A37E5C2375D73A00D75A6F /* AppDelegate.swift */,
+				A912A92223770E280034E621 /* Constants.swift */,
+			);
+			path = "Commons Files";
+			sourceTree = "<group>";
+		};
+		A940EE162376B7A500C4919F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9A37E602375D73A00D75A6F /* HomeVc.swift */,
+				A940EE1A2376BA5E00C4919F /* HomeVc.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A940EE182376B7B900C4919F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A912A91A237701030034E621 /* City.swift */,
+				A912A91C237701170034E621 /* Weather.swift */,
+				A912A927237875140034E621 /* OpenWeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A940EE192376B7C100C4919F /* Views Models */ = {
+			isa = PBXGroup;
+			children = (
+				A912A9142376FC700034E621 /* HomeViewModel.swift */,
+			);
+			path = "Views Models";
+			sourceTree = "<group>";
+		};
 		A9A37E502375D73A00D75A6F = {
 			isa = PBXGroup;
 			children = (
 				A9A37E5B2375D73A00D75A6F /* TunisiaWeatherApp */,
 				A9A37E722375D73D00D75A6F /* TunisiaWeatherAppTests */,
 				A9A37E5A2375D73A00D75A6F /* Products */,
+				919CA9906B9F8B3DE8E968AC /* Pods */,
+				0C329271DB2F75FA28BA5C2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +227,9 @@
 		A9A37E5B2375D73A00D75A6F /* TunisiaWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				A9A37E5C2375D73A00D75A6F /* AppDelegate.swift */,
-				A9A37E5E2375D73A00D75A6F /* SceneDelegate.swift */,
-				A9A37E602375D73A00D75A6F /* ViewController.swift */,
-				A9A37E622375D73A00D75A6F /* Main.storyboard */,
-				A9A37E652375D73D00D75A6F /* Assets.xcassets */,
+				A9A37E7F2375D78800D75A6F /* Configurations */,
+				A9A37E7E2375D76D00D75A6F /* Modules */,
 				A9A37E672375D73D00D75A6F /* LaunchScreen.storyboard */,
-				A9A37E6A2375D73D00D75A6F /* Info.plist */,
 			);
 			path = TunisiaWeatherApp;
 			sourceTree = "<group>";
@@ -99,6 +243,25 @@
 			path = TunisiaWeatherAppTests;
 			sourceTree = "<group>";
 		};
+		A9A37E7E2375D76D00D75A6F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A912A9162376FC820034E621 /* Repository */,
+				A940EE142376B77400C4919F /* SETTINGS */,
+				A940EE132376B76300C4919F /* HOME */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A9A37E7F2375D78800D75A6F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A912A924237718F10034E621 /* Utilities */,
+				A940EE152376B78600C4919F /* Commons Files */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9A37E782375D73D00D75A6F /* Build configuration list for PBXNativeTarget "TunisiaWeatherApp" */;
 			buildPhases = (
+				A7F31CF451DB37F91AF02DE7 /* [CP] Check Pods Manifest.lock */,
 				A9A37E552375D73A00D75A6F /* Sources */,
 				A9A37E562375D73A00D75A6F /* Frameworks */,
 				A9A37E572375D73A00D75A6F /* Resources */,
+				FEC7A1380416C750A4CD7CC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9A37E7B2375D73D00D75A6F /* Build configuration list for PBXNativeTarget "TunisiaWeatherAppTests" */;
 			buildPhases = (
+				6FD8A162B54EBE44D1046CAB /* [CP] Check Pods Manifest.lock */,
 				A9A37E6B2375D73D00D75A6F /* Sources */,
 				A9A37E6C2375D73D00D75A6F /* Frameworks */,
 				A9A37E6D2375D73D00D75A6F /* Resources */,
@@ -182,7 +348,7 @@
 			files = (
 				A9A37E692375D73D00D75A6F /* LaunchScreen.storyboard in Resources */,
 				A9A37E662375D73D00D75A6F /* Assets.xcassets in Resources */,
-				A9A37E642375D73A00D75A6F /* Main.storyboard in Resources */,
+				A940EE1B2376BA5E00C4919F /* HomeVc.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +361,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FD8A162B54EBE44D1046CAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TunisiaWeatherAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F31CF451DB37F91AF02DE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TunisiaWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC7A1380416C750A4CD7CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9A37E552375D73A00D75A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A37E612375D73A00D75A6F /* ViewController.swift in Sources */,
+				A912A921237704F60034E621 /* WebWeatherAPIRepository.swift in Sources */,
+				A9A37E612375D73A00D75A6F /* HomeVc.swift in Sources */,
+				A912A91B237701030034E621 /* City.swift in Sources */,
 				A9A37E5D2375D73A00D75A6F /* AppDelegate.swift in Sources */,
+				A912A928237875140034E621 /* OpenWeatherModel.swift in Sources */,
 				A9A37E5F2375D73A00D75A6F /* SceneDelegate.swift in Sources */,
+				A912A926237719080034E621 /* Extensions.swift in Sources */,
+				A912A91D237701170034E621 /* Weather.swift in Sources */,
+				A912A9152376FC700034E621 /* HomeViewModel.swift in Sources */,
+				A912A91F237701400034E621 /* CityRepository.swift in Sources */,
+				A912A92A237884980034E621 /* LocalWeatherRepository.swift in Sources */,
+				A912A92323770E280034E621 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9A37E622375D73A00D75A6F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9A37E632375D73A00D75A6F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9A37E672375D73D00D75A6F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,11 +591,12 @@
 		};
 		A9A37E792375D73D00D75A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0737B7914C70CA337B5A44 /* Pods-TunisiaWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = TunisiaWeatherApp/Info.plist;
+				INFOPLIST_FILE = "TunisiaWeatherApp/Configurations/Commons Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,17 +604,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.TunisiaWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A9A37E7A2375D73D00D75A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCB165C60FA8FB4FE06F8C9 /* Pods-TunisiaWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z6N447KN77;
-				INFOPLIST_FILE = TunisiaWeatherApp/Info.plist;
+				INFOPLIST_FILE = "TunisiaWeatherApp/Configurations/Commons Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,12 +623,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobilepowered.TunisiaWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A9A37E7C2375D73D00D75A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA71F7914CEF95A6EE68763E /* Pods-TunisiaWeatherAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +652,7 @@
 		};
 		A9A37E7D2375D73D00D75A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD4E723D7A908DBECBB8E1E /* Pods-TunisiaWeatherAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

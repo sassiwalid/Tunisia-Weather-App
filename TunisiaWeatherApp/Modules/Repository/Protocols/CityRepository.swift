@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+@objc protocol CityRepository {
+    func get( cityName:String,onComplete:@escaping (_ Success:Bool,_ error:Bool,_ city:OpenWeatherModel)->() )
+    @objc optional func saveData(_ openWeatherModel:OpenWeatherModel)
+}
