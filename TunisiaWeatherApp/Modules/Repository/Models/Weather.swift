@@ -39,10 +39,10 @@ import Realm
         self.clouds = try container.decode(Int.self,forKey:.clouds)
     }
     required init(value: Any, schema: RLMSchema){
-        
+         fatalError("init(value:schema:) has not been implemented")
     }
     
     required init(realm: RLMRealm, schema: RLMObjectSchema){
-     
+     fatalError("init(realm:schema:) has not been implemented")
     }
 }
