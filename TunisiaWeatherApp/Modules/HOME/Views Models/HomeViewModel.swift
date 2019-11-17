@@ -12,6 +12,7 @@ import Foundation
 public class HomeViewModel {
     var cityRepoAPI:CityRepository?
     var cityRepoCache:CityRepository?
+    
     var model:OpenWeatherModel?{
         didSet{
             self.ReloadTableViewClosure?()
@@ -41,11 +42,13 @@ public class HomeViewModel {
         // First change the status, this will call the updateLoadingStatus
         status = .loading
         cityRepoAPI?.get(cityName: cityName, onComplete: { (success, error, model) in
-            guard error else {
+            if (error == true){
                 self.alertMessage = "Erreur de récupération"
-                return}
+                self.status = .error
+            }
             guard success else {return}
             self.model = model
+            self.status = .completed
             self.cityRepoCache?.saveData!(model)
         })
     }

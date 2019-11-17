@@ -10,6 +10,7 @@ import UIKit
 
 class HomeVc: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var weatherTableView: UITableView!
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var departementCollectionView: UICollectionView!
@@ -19,7 +20,47 @@ class HomeVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        initVM()
+        
+    }
+    
+    func initVM(){
+        // Naive Data Binding
+        viewModel.showAlertClosure = {
+            DispatchQueue.main.async {
+                self.showAlert(self.viewModel.alertMessage ?? "")
+            }
+        }
+        viewModel.updateLoadingStatus = {
+            DispatchQueue.main.async {
+                switch self.viewModel.status{
+                case .completed:
+                    self.activityIndicator.stopAnimating()
+                    self.weatherTableView.isHidden = false
+                    self.activityIndicator.isHidden = true
+                    return
+                case .loading:
+                    self.activityIndicator.startAnimating()
+                    self.weatherTableView.isHidden = true
+                    self.activityIndicator.isHidden = false
+                case .error:
+                    self.activityIndicator.stopAnimating()
+                    self.weatherTableView.isHidden = true
+                    self.activityIndicator.isHidden = true
+                    return
+                case .none:
+                    return
+                }
+                
+            }
+        }
         viewModel.fetchData(cityName: "Bizerte")
+        
+    }
+    func showAlert( _ message: String ) {
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+        alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 

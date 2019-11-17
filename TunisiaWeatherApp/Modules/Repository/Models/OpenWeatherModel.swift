@@ -13,14 +13,19 @@ import RealmSwift
 @objcMembers class OpenWeatherModel:Object,Decodable{
     dynamic var myCity : City? = City()
     var list = RealmSwift.List<Weather>()
-
+    dynamic var message: Double = 0
+    dynamic var id : String = ""
     enum CodingKeys:String,CodingKey{
     case city
     case list
+    case message
 
     }
     required init() {
         super.init()
+    }
+    static override func primaryKey() -> String? {
+        return "id"
     }
     
     convenience required init(from decoder: Decoder) throws{
@@ -29,6 +34,8 @@ import RealmSwift
     myCity = try container.decode(City.self,forKey: .city)
     let weatherList = try container.decode([Weather].self, forKey: .list)
     list.append(objectsIn: weatherList)
+    message = try container.decode(Double.self, forKey: .message)
+    id = String(message)
 
     }
     required init(value: Any, schema: RLMSchema){
