@@ -109,12 +109,16 @@ extension HomeVc:UICollectionViewDelegate,UICollectionViewDataSource{
 }
 extension HomeVc:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let collectionWidth = collectionView.bounds.size.width
-        return CGSize(width: collectionWidth / 2, height: collectionWidth/2)
+        return CGSize(width: 90, height: 90)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
         return  0
     }
+    func collectionView(_ collectionView: UICollectionView,
+                          layout collectionViewLayout: UICollectionViewLayout,
+                          insetForSectionAt section: Int) -> UIEdgeInsets {
+          return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5) //.zero
+      }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
         return 0
     }
