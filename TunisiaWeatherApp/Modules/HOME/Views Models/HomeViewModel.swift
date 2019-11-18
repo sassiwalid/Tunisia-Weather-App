@@ -13,6 +13,8 @@ public class HomeViewModel {
     var cityRepoAPI:CityRepository?
     var cityRepoCache:CityRepository?
     var cityWeathers = [Weather]()
+    var cityNames = ["Bizerte","Tunis","Nabeul","Sfax","Tozeur","Sousse","Mahdia"]
+    
     var model:OpenWeatherModel?{
         didSet{
             self.ReloadTableViewClosure?()

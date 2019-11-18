@@ -29,6 +29,9 @@ class HomeVc: UIViewController {
         weatherTableView.delegate = self
         weatherTableView.dataSource = self
         weatherTableView.register(UINib(nibName: "WeatherCityCell", bundle: nil), forCellReuseIdentifier: "weatherCityCell")
+        departementCollectionView.register(UINib(nibName: "CityCollectionCell", bundle: nil), forCellWithReuseIdentifier: "cityCollectionView")
+        departementCollectionView.isPagingEnabled = false
+
     }
     
     func initVM(){
@@ -90,5 +93,36 @@ extension HomeVc:UITableViewDelegate,UITableViewDataSource{
         return 90
     }
 }
+extension HomeVc:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel.cityNames.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView
+          .dequeueReusableCell(withReuseIdentifier: "cityCollectionView", for: indexPath) as! CityCollectionCell
+        // Configure the cell
+        cell.cityNameLabel.text = viewModel.cityNames[indexPath.row]
+        return cell
+    }
+    
+}
+extension HomeVc:UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        let collectionWidth = collectionView.bounds.size.width
+        return CGSize(width: collectionWidth / 2, height: collectionWidth/2)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
+        return  0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
+        return 0
+    }
+    
+}
+
+    
+    
+
 
 

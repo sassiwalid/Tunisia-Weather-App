@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC6C2C0CE60C3900C0C2DFA /* Pods_TunisiaWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED1D5B56D7BCCA4C6534B1 /* Pods_TunisiaWeatherApp.framework */; };
+		1418E1E72DB60C880AFF0E3B /* Pods_TunisiaWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537EE6AF96C7F61437D157EE /* Pods_TunisiaWeatherAppTests.framework */; };
 		A912A9152376FC700034E621 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A9142376FC700034E621 /* HomeViewModel.swift */; };
 		A912A91B237701030034E621 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A91A237701030034E621 /* City.swift */; };
 		A912A91D237701170034E621 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912A91C237701170034E621 /* Weather.swift */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51ED1D5B56D7BCCA4C6534B1 /* Pods_TunisiaWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunisiaWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537EE6AF96C7F61437D157EE /* Pods_TunisiaWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TunisiaWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		917530618353C73AFB85D470 /* Pods-TunisiaWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A912A9142376FC700034E621 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A912A91A237701030034E621 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		A912A91C237701170034E621 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		A9FCAD6923829C0D00027136 /* CityCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionCell.swift; sourceTree = "<group>"; };
 		A9FCAD6A23829C0D00027136 /* CityCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCollectionCell.xib; sourceTree = "<group>"; };
 		A9FCAD6D2382A88A00027136 /* WeatherCityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCityCellViewModel.swift; sourceTree = "<group>"; };
+		CB4EEB22A64F7929395E00C5 /* Pods-TunisiaWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		D165260275DA01A8FF7361C6 /* Pods-TunisiaWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherAppTests/Pods-TunisiaWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF01FFC524AE261185D2BDC9 /* Pods-TunisiaWeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TunisiaWeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TunisiaWeatherAppTests/Pods-TunisiaWeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC6C2C0CE60C3900C0C2DFA /* Pods_TunisiaWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1418E1E72DB60C880AFF0E3B /* Pods_TunisiaWeatherAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +101,21 @@
 		919CA9906B9F8B3DE8E968AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				917530618353C73AFB85D470 /* Pods-TunisiaWeatherApp.debug.xcconfig */,
+				CB4EEB22A64F7929395E00C5 /* Pods-TunisiaWeatherApp.release.xcconfig */,
+				EF01FFC524AE261185D2BDC9 /* Pods-TunisiaWeatherAppTests.debug.xcconfig */,
+				D165260275DA01A8FF7361C6 /* Pods-TunisiaWeatherAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D353AA175E68B7D60D6BBC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51ED1D5B56D7BCCA4C6534B1 /* Pods_TunisiaWeatherApp.framework */,
+				537EE6AF96C7F61437D157EE /* Pods_TunisiaWeatherAppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A912A9162376FC820034E621 /* Repository */ = {
@@ -222,6 +245,7 @@
 				A9A37E722375D73D00D75A6F /* TunisiaWeatherAppTests */,
 				A9A37E5A2375D73A00D75A6F /* Products */,
 				919CA9906B9F8B3DE8E968AC /* Pods */,
+				9D353AA175E68B7D60D6BBC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9A37E782375D73D00D75A6F /* Build configuration list for PBXNativeTarget "TunisiaWeatherApp" */;
 			buildPhases = (
+				49B107C4769EB1056D04456D /* [CP] Check Pods Manifest.lock */,
 				A9A37E552375D73A00D75A6F /* Sources */,
 				A9A37E562375D73A00D75A6F /* Frameworks */,
 				A9A37E572375D73A00D75A6F /* Resources */,
+				6B99239A9555B3AB9EBE3759 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9A37E7B2375D73D00D75A6F /* Build configuration list for PBXNativeTarget "TunisiaWeatherAppTests" */;
 			buildPhases = (
+				2D64BE9E8A332321927AD29E /* [CP] Check Pods Manifest.lock */,
 				A9A37E6B2375D73D00D75A6F /* Sources */,
 				A9A37E6C2375D73D00D75A6F /* Frameworks */,
 				A9A37E6D2375D73D00D75A6F /* Resources */,
@@ -370,6 +397,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D64BE9E8A332321927AD29E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TunisiaWeatherAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49B107C4769EB1056D04456D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TunisiaWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B99239A9555B3AB9EBE3759 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TunisiaWeatherApp/Pods-TunisiaWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9A37E552375D73A00D75A6F /* Sources */ = {
@@ -540,6 +631,7 @@
 		};
 		A9A37E792375D73D00D75A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 917530618353C73AFB85D470 /* Pods-TunisiaWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +650,7 @@
 		};
 		A9A37E7A2375D73D00D75A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4EEB22A64F7929395E00C5 /* Pods-TunisiaWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +669,7 @@
 		};
 		A9A37E7C2375D73D00D75A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF01FFC524AE261185D2BDC9 /* Pods-TunisiaWeatherAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +692,7 @@
 		};
 		A9A37E7D2375D73D00D75A6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D165260275DA01A8FF7361C6 /* Pods-TunisiaWeatherAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
