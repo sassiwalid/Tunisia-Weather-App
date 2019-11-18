@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="weatherCityCell" rowHeight="91" id="KGk-i7-Jjw" customClass="WeatherCityCell" customModule="TunisiaWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324.5" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-Ym-Rxf">
+                        <rect key="frame" x="6" y="60" width="309" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-EX-TVm">
+                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikh-yv-p4p">
+                                <rect key="frame" x="75.5" y="0.0" width="82.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfN-kB-dhG">
+                                <rect key="frame" x="151" y="0.0" width="82.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIs-0n-ati">
+                                <rect key="frame" x="226.5" y="0.0" width="82.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="43Y-fD-U9V">
+                        <rect key="frame" x="5" y="4" width="295.5" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunrise" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-sZ-HgN">
+                                <rect key="frame" x="0.0" y="0.0" width="53" height="50"/>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="I8F-0T-nAK"/>
+                                    <constraint firstAttribute="height" constant="50" id="UMV-K1-TXI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JRu-OL-pKz">
+                                <rect key="frame" x="81" y="0.0" width="53" height="50"/>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-9N-L5J">
+                                <rect key="frame" x="162" y="0.0" width="52.5" height="50"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WW-yb-DTJ">
+                                <rect key="frame" x="242.5" y="0.0" width="53" height="50"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r0s-Ym-Rxf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="LgE-8S-CtU"/>
+                    <constraint firstItem="43Y-fD-U9V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="NxP-fP-WSm"/>
+                    <constraint firstAttribute="bottom" secondItem="r0s-Ym-Rxf" secondAttribute="bottom" constant="13" id="aF3-0l-kHF"/>
+                    <constraint firstAttribute="trailing" secondItem="r0s-Ym-Rxf" secondAttribute="trailing" constant="5.5" id="gmL-Eo-Pfm"/>
+                    <constraint firstItem="r0s-Ym-Rxf" firstAttribute="top" secondItem="43Y-fD-U9V" secondAttribute="bottom" constant="6" id="iNp-P4-Kw5"/>
+                    <constraint firstItem="43Y-fD-U9V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="kmp-eJ-LMd"/>
+                    <constraint firstAttribute="trailing" secondItem="43Y-fD-U9V" secondAttribute="trailing" constant="20" id="uk0-a7-BlU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sunriseLabel" destination="n9U-EX-TVm" id="lJ9-wB-xjo"/>
+                <outlet property="sunsetLabel" destination="ikh-yv-p4p" id="5o2-ce-h4u"/>
+                <outlet property="temperatureLabel" destination="RIs-0n-ati" id="OT9-yp-mNa"/>
+                <outlet property="windSpeedLabel" destination="sfN-kB-dhG" id="JeC-x6-ZbA"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sunrise" width="22" height="18"/>
+        <image name="sunset" width="22" height="18"/>
+        <image name="thermometer" width="11" height="19"/>
+        <image name="wind" width="17" height="15"/>
+    </resources>
+</document>

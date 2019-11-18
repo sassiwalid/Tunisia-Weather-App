@@ -12,7 +12,7 @@ import Foundation
 public class HomeViewModel {
     var cityRepoAPI:CityRepository?
     var cityRepoCache:CityRepository?
-    
+    var cityWeathers = [Weather]()
     var model:OpenWeatherModel?{
         didSet{
             self.ReloadTableViewClosure?()
